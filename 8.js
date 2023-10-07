@@ -14,7 +14,7 @@ class User {
 
   sendMessage(message) {
     console.log(`${this.name} відправив повідомлення ${message}`);
-    return this.messenger.sendMessage(this, message);
+    return this.messenger.sendMessage(message);
   }
   receiveMessage(user, message) {
     console.log(
